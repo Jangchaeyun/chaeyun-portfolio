@@ -32,10 +32,12 @@ const Navbar = () => {
               transition={{ duration: 0.85, ease: 'easeOut' }}
             >
               <HiX onClick={() => setToggle(false)} />
-              <ul className='app__navbar-links'>
+              <ul>
                 {['홈', '대해서', '프로젝트', '스킬', '연락'].map((item) => (
                   <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
                   </li>
                 ))}
               </ul>
