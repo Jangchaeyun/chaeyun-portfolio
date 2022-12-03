@@ -90,6 +90,6 @@ const Footer = () => {
 
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
-  '연락',
+  '문의',
   'app__primarybg'
 );
