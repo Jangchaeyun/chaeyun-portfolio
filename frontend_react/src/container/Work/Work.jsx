@@ -44,7 +44,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['웹앱', '모바일', 'React JS', '풀스텍', 'JSP(HTML/CSS)', '모두'].map((item, index) => (
+        {['웹앱', 'ReactNative', 'React JS', '풀스텍', 'JSP(HTML/CSS)', '팀 프로젝트', '개인 프로젝트',  '모두'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -99,6 +99,7 @@ const Work = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <p className="p-text" style={{ marginTop: 15 }}>작업 기간: {work.date}</p>
 
               <div className='app__work-tag app__flex'>
                 <p className='p-text'>{work.tags[0]}</p>
