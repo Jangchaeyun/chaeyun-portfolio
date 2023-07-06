@@ -47,7 +47,6 @@ const Work = () => {
       <div className="app__work-filter">
         {[
           "웹앱",
-          "ReactNative",
           "React JS",
           "풀스텍",
           "JSP(HTML/CSS)",
